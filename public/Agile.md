@@ -48,13 +48,13 @@ Much like a rugby team (where it gets its name) training for the big game, scrum
 - Sprint review
 - Sprint retrospective
 
-![SCRUM artifacts](https://github.com/guillermo-segura/tech-interview-questions/blob/main/scrum_artifacts.png 'SCRUM artifacts')
+![SCRUM artifacts](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/scrum_artifacts.png 'SCRUM artifacts')
 
 ### Kanban
 
 Work items are represented visually on a kanban board, allowing team members to see the state of every piece of work at any time. A kanban board is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).
 
-![Kanban board](https://github.com/guillermo-segura/tech-interview-questions/blob/main/kanban.png 'Kanban board')
+![Kanban board](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/kanban.png 'Kanban board')
 
 ### Kanban VS Scrum
 

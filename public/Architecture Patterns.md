@@ -4,25 +4,25 @@
 
 The circuit breaker pattern minimizes the effects of a hazard by rerouting traffic to another service. While it helps make systems more fault tolerant to prevent accidents, it also requires sophisticated testing and using an infrastructure-management technology like service mesh.
 
-![Circuit breaker pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/circuit_breaker.png 'Circuit breaker pattern')
+![Circuit breaker pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/circuit_breaker.png 'Circuit breaker pattern')
 
 ## Client-server
 
 The client-server pattern is a peer-to-peer architecture that is comprised of a client, which requests a service, and a server, which provides the service. Examples include banking, file sharing, email, and the World Wide Web. One advantage of this pattern is that data and network peripherals are centrally managed, however, the server is expensive. Furthermore, the server continues to listen to client requests.
 
-![Client server pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/client_server.png 'Client server pattern')
+![Client server pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/client_server.png 'Client server pattern')
 
 ## Command Query Responsibility Segregation
 
 The command query responsibility segregation (CQRS) pattern handles the situation where database queries happen more often than data changes. It separates read and write activities to provide greater stability, scalability, and performance, but it requires more database technologies and therefore may increase costs.
 
-![Command query responsibility segregation pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/cqrs.png 'Command query responsibility segregation pattern')
+![Command query responsibility segregation pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/cqrs.png 'Command query responsibility segregation pattern')
 
 ## Controller-responder (Master-slave)
 
 The controller-responder pattern divides the architecture into two components: The controller handles the data and distributes workloads, and the responder replicates data from the controller and generates results. One advantage is that you can read data from the responder without affecting the data in the controller, but if the controller fails, you may lose data and need to restart the application.
 
-![Controller responder pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/controller_responder.png 'Controller responder pattern')
+![Controller responder pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/controller_responder.png 'Controller responder pattern')
 
 ## Layered
 
@@ -38,37 +38,37 @@ The most commonly found 4 layers of a general information system are as follows:
 
 - Data access layer (also known as persistence layer)
 
-![Layered pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/layered.png 'Layered pattern')
+![Layered pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/layered.png 'Layered pattern')
 
 ## Microservices
 
 The microservices pattern combines design patterns to create multiple services that work interdependently to create a larger application. Because each application is small, it's easier to update them when needed, but the complexity means you need greater architectural expertise to make everything work correctly.
 
-![Microservices pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/microservices.png 'Microservices pattern')
+![Microservices pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/microservices.png 'Microservices pattern')
 
 ## Model-view-controller ⭐
 
 The model-view-controller (MVC) pattern divides an application into three components. The model contains the application's data and main functionality; the view displays data and interacts with the user; and the controller handles user input and acts as the mediator between the model and the view. This pattern enables the application to generate various views, but its layers of abstraction increase complexity.
 
-![Model view controller pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/mvc.png 'Model view controller pattern')
+![Model view controller pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/mvc.png 'Model view controller pattern')
 
 ## Pub-sub
 
 The pub-sub pattern sends (publishes) relevant messages to places that have subscribed to a topic. It's easy to configure but more challenging to test because interactions between the publisher and the subscriber are asynchronous.
 
-![Publisher subscriber pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/pub_sub.png 'Publisher subscriber pattern')
+![Publisher subscriber pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/pub_sub.png 'Publisher subscriber pattern')
 
 ## Saga
 
 The saga pattern is used for transactions with multiple steps, such as travel reservation services. A "saga" includes the various steps that must happen for the transaction to complete. This pattern enables transactions (ideally with five or fewer steps) to happen in loosely coupled, message-driven environments, but it requires a lot of programming and can be complex to manage.
 
-![Saga pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/saga.png 'Saga pattern')
+![Saga pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/saga.png 'Saga pattern')
 
 ## Sharding
 
 The sharding pattern segments data in a database to speed commands or queries. It ensures storage is consumed equally across instances but demands a skilled and experienced database administrator to manage sharding effectively. There’s horizontal sharding and vertical sharding.
 
-![Shardingpattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/sharding.png 'Shardingpattern')
+![Shardingpattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/sharding.png 'Shardingpattern')
 
 ## Static content hosting
 
@@ -78,19 +78,19 @@ The static content hosting pattern is used to optimize webpage loading time. It 
 
 The strangler pattern is used when you're making incremental changes to a system. It places the old system behind an intermediary (strangler facade or interface) to support incremental transformation, which reduces risk compared to making larger changes. However, you need to pay close attention to routing and network management and make sure you have a rollback plan in place in case things go wrong.
 
-![Strangler pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/strangler.png 'Strangler pattern')
+![Strangler pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/strangler.png 'Strangler pattern')
 
 ## Throttling
 
 The throttling (or rate-limiting) pattern controls how fast data flows into a target. It's often used to prevent failure during a distributed denial of service attack or to manage cloud infrastructure costs. To use this pattern successfully, you need good redundancy mechanisms in place, and it's often used alongside the circuit breaker pattern to maintain service performance.
 
-![Throttling pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/throttling.png 'Throttling pattern')
+![Throttling pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/throttling.png 'Throttling pattern')
 
 ## Pipe-filter
 
 This pattern can be used to structure systems which produce and process a stream of data. Each processing step is enclosed within a filter component. Data to be processed is passed through pipes. These pipes can be used for buffering or synchronization purposes. E.g.: compilers; the consecutive filters perform lexical analysis, parsing, semantic analysis, and code generation.
 
-![Pipe filter pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/pipe_filter.png 'Pipe filter pattern')
+![Pipe filter pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/pipe_filter.png 'Pipe filter pattern')
 
 ## Broker
 
@@ -100,7 +100,7 @@ Servers publish their capabilities (services and characteristics) to a broker. C
 
 - Used in message broker software such as Apache ActiveMQ, Apache Kafka, RabbitMQ and JBoss Messaging.
 
-![Broker pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/broker.png 'Broker pattern')
+![Broker pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/broker.png 'Broker pattern')
 
 ## P2P
 
@@ -108,13 +108,13 @@ In this pattern, individual components are known as peers. Peers may function bo
 
 - Used in file-sharing networks such as Gnutella and G2, multimedia protocols such as P2PTV and PDTP, or cryptocurrency-based products such as Bitcoin and Blockchain.
 
-![Peer to peer pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/p2p.png 'Peer to peer pattern')
+![Peer to peer pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/p2p.png 'Peer to peer pattern')
 
 ## Event-bus or Event-driven
 
 This pattern primarily deals with events and has 4 major components; event source, event listener, channel and event bus. Sources publish messages to particular channels on an event bus. Listeners subscribe to particular channels. Listeners are notified of messages that are published to a channel to which they have subscribed before. This pattern is very popular in notification services.
 
-![Event driven pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/event_driven.png 'Event driven pattern')
+![Event driven pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/event_driven.png 'Event driven pattern')
 
 ## Blackboard
 
@@ -130,7 +130,7 @@ All the components have access to the blackboard. Components may produce new dat
 
 - Used in speech recognition, vehicle identification and tracking, protein structure identification, sonar signals interpretation.
 
-![Blackboard pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/blackboard.png 'Blackboard pattern')
+![Blackboard pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/blackboard.png 'Blackboard pattern')
 
 ## Interpreter
 
@@ -138,7 +138,7 @@ This pattern is used for designing a component that interprets programs written 
 
 - Used in database query languages such as SQL and languages used to describe communication protocols.
 
-![Interpreter pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/interpreter.png 'Interpreter pattern')
+![Interpreter pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/interpreter.png 'Interpreter pattern')
 
 ## Space-Based
 
@@ -158,7 +158,7 @@ A bidding auction site can be considered a fitting example of this architecture 
 
   - It is a complex task to cache the data for speed without disturbing multiple copies.
 
-![Space based pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/space_based.png 'Space based pattern')
+![Space based pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/space_based.png 'Space based pattern')
 
 ## Non-blocking (Asynchronous) ⭐
 
@@ -172,4 +172,4 @@ Asynchronous is a non-blocking architecture that enables the execution of tasks 
 
 Asynchronous programming enhances the user experience by decreasing the lag time between when a function is called and when the value of that function is returned. Async programming translates to a faster, more seamless flow in the real world. For example, users want their apps to run fast, but fetching data from an API takes time. In these cases, asynchronous programming helps the app screen load more quickly, improving the user experience.
 
-![Asynchronous pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/asynchronous.png 'Asynchronous pattern')
+![Asynchronous pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/asynchronous.png 'Asynchronous pattern')
