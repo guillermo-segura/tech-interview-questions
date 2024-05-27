@@ -1,5 +1,5 @@
-# tech-interview-questions
-Tech interview questions I've faced throughout my career
+# Tech Interview Questions
+Tech interview questions I've faced throughout my career.
 
 ## Agile
 
@@ -47,7 +47,6 @@ With Scrum, your team promises to ship some valuable increment of work by the en
 Kanban is great for teams that have lots of incoming requests that vary in priority and size. Whereas scrum processes require high control over what is in scope, kanban let’s you go with the flow.
 
 ## Architecture Patterns
----
 
 ### Circuit Breaker
 The circuit breaker pattern minimizes the effects of a hazard by rerouting traffic to another service. While it helps make systems more fault tolerant to prevent accidents, it also requires sophisticated testing and using an infrastructure-management technology like service mesh.
@@ -153,7 +152,6 @@ Asynchronous is a non-blocking architecture that enables the execution of tasks 
 Asynchronous programming enhances the user experience by decreasing the lag time between when a function is called and when the value of that function is returned. Async programming translates to a faster, more seamless flow in the real world. For example, users want their apps to run fast, but fetching data from an API takes time. In these cases, asynchronous programming helps the app screen load more quickly, improving the user experience.
 
 ## JavaScript
----
 
 ### What is Hoisting?
 Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
@@ -164,7 +162,6 @@ Variables defined with let and const are hoisted to the top of the block, but no
 JavaScript only hoists declarations, not initializations. Hoisting is (to many developers) an unknown or overlooked behavior of JavaScript. If a developer doesn't understand hoisting, programs may contain bugs. To avoid this, always declare all variables at the beginning of every scope.
 
 ## React
----
 
 ### What is React? What is the role of React in software development?
 
@@ -276,7 +273,6 @@ It is asynchronous because state updates are queued into the JS event loop to al
 You can render an HTML string by setting the `innerHTML` attribute of an element to the string. To get the element, you either query it using JavaScript or set the prop `dangerouslySetInnerHTML={{ __html: <html_string> }}`
 
 ## Node.js
----
 
 ### Can you explain what Node.js is and its advantages for backend development?
 
@@ -429,7 +425,6 @@ In summary, Express.js stands out for its minimalism, flexibility, and middlewar
 - **Performance Optimization**: Implement best practices such as caching, compression, code optimization, and database query optimization to enhance performance.
 
 ## WEB3
----
 
 ### What can you tell me about Verifiable Credential Workflow?
 
@@ -479,7 +474,6 @@ A white-label product is a brandless product that will be sold to a company, whi
 Digital identity is a 1-1 relationship between an entity, usually a human, and its digital presence. In the context of Web3, it would be a Decentralized Identifier (DID).
 
 ## GIT
----
 
 ### What is Git and why is it used?
 
@@ -584,7 +578,6 @@ Conventional Commits are a specification for structuring commit messages in a st
 Conventional Commits promote standardized and semantic commit messages, making it easier for developers to understand the purpose of changes, automate release processes, and generate accurate release notes.
 
 ## Express.js
----
 
 ### What is Express.js and why is it popular?
 
@@ -657,135 +650,41 @@ File uploads can be handled in Express.js using middleware such as `multer`. `mu
 
 CORS in Express.js can be handled using the `cors` middleware or by implementing custom middleware to set the necessary CORS headers (e.g., `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, `Access-Control-Allow-Headers`) in the response to allow cross-origin requests from specific origins or methods.
 
-Online Courses
-React Native
-Tracking App
-Plan the navigation structure to follow. E.g.:
+## General Questions
 
-The Coding Interview: Algorithms & Data Structures
-Types
-Take-home assignments
-Pair programming
-Whiteboarding ⚠️
-Notes
-Consider multiple solutions for every exercise
-Solutions don’t need to be perfect, but you need to be able to explain and acknowledge improvements in presented solutions
-parseInt removes any symbol after the number (5- → 5)
-Recursion: Functions call themselves.
-Draw and verbalise your thoughts and solutions
-Runtime complexity: the power or time a given algorithm costs to run
-Constant (1) → Regardless of the elements, the cost stays the same
-Linear (N) → Iterations over a collection of data (single for loop)
-Logarithmic (log(N)) → Happens when doubling the elements doesn’t double the cost required. Common in search operations
-Quasilinear (N * log(N)) → Happens when doubling the elements doesn’t double the cost required. Common in sorting operations
-Quadratic (N2)→ Every element compares to every other element
-(Exponential 2N) → Adding a single element duplicates the cost required
-Runtime complexity is commonly used as O(type) and means an algorithm's worst-case complexity.
-Single for loop over a collection? O(N)
-Over half a collection? Still O(N)
-Two separate loops over the same collection? O(2 * N)
-And different collections? O(N + M)
-Two nested loops over the same collection? O(N2)
-Over different collections? O(N * M)
-Sorting a collection? O(N * log(N))
-Searching a collection? O(log(N))
-Space complexity: the memory a given algorithm costs to run. Less common than runtime complexity in interviews
-Memoisation can be useful to reduce the runtime complexity
-How would you design X product? E.g. Twitter, Uber, Google: follow these rules
-No right answer
-Each interviewer expects a different answer
-Focus on the data structure
-Don’t mention specific technologies
-Draw stuff
-Talk
-Data Structures
-Queue: container of records where they enter (enqueue) and leave (dequeue) in FIFO order
-Stack: container of records where we add or remove records in FILO (LIFO) order
-Linked List: list of linked nodes that contains a value and the reference of the next node. When no further node is available, it returns null—also known as the chain.
-Head - first node
-Data - value within the node
-Tail - last node
-Generators and iterators are a thing. Similar structure to async functions
-Slow & Fast variables help with moving through a linked list.
-Trees: linked lists with multiple nodes. Two ways of navigating through them:
-Traverse Breadth-First - horizontally
-Traverse Depth-First - vertically
-Binary Search Trees: Trees with only two children where the left child has a value lower than the parent node and the right child has a greater value.
-Sorting
-Bubble (O(N2)):
+### Differences between framework VS library
+Libraries are called by the code but frameworks call our code. This is an Inversion of Control (IoC) as the framework maintains control of the application.
 
-Selection (O(N2)): 
+### What's the purpose of a load balancer
+Invisible facilitator between the user and a group of servers, ensuring the server resources are distributed equally across the requests. Related to horizontal scalability.
 
-Merge (O(N * log(N)): 
+### What is a Promise (JS) ❗
+Object that will produce a single value sometime in the future. If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed. 
 
-Microfrontends with React
-All the code in one single code base → Monolithic Single Page Application
-Main features split into different SPAs → Microfrontend
-Avoid direct communication between SPAs. Handle data through API
+- Pending: This is the default state of a defined promise
+- Fulfilled:  This is the state of a successful promise
+- Rejected: This is the state of a failed promise
 
-Integration: How and when the container accesses the source code in each MFE. Many solutions for this, with their pros and cons.
-Built-time (Compile-time): Container gets access to MFE before it’s loaded into the browser.
-Run-time (Client side): Container gets access to MFE after it’s loaded into the browser.
-Server side
+### Elasticsearch
+Search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Elasticsearch is developed in Java and its official clients are available in Java, .NET (C#), PHP, Python, Ruby and many other languages. According to the DB-Engines ranking, Elasticsearch is the most popular enterprise search engine. [Wiki](https://en.wikipedia.org/wiki/Elasticsearch).
 
-Webpack: Combines all our JS files into a single file
-Module Federation Plugin: Allows a build to provide or consume modules with other independent builds at runtime.
-Use bootstrap.js to prevent issues when sharing modules. It helps when loading other libraries asynchronously.
-If different versions of modules are used, all should be loaded. No version enforcement should happen
-Certain libraries will not work with multiple copies (e.g. React). singleton should be used in those cases. Copies should be mayor version-compatible (e.g. ^5.0.0 and 5.1.0).
-⚠️ if an ID matches the name of the imported module, the page may crash as the element with said ID will overwrite the imported module variable.
-Good rules to follow:
-Zero coupling between children
-Zero or near-zero coupling between container and children
-CSS changes on project A should not affect other projects
-Version control should not affect projects (matter of preference). Either monorepo or separated repos are fine
-Container should be able to decide whether to use latest version of child or specific version
-Deployment challenges:
-Modules should be deployable independently. Including the container module.
-Module URLs should be known at build time. They can be set on the webpack.prod.js file.
-Services usually handle single project deployments. We need a service that handles multiple different projects deployments separately.
-CI/CD.
-remoteEntry.js needs a dynamic name as there could be caching issues with a fixed name.
-AWS
-Policy: What allows multiple AWS services to talk to each other and access their different features
-Distribution: Allows us to distribute different files from our S3 bucket
-[CloudFront] Invalidation: Fix caching issues and make sure we use the right version of our static page
-Styling
-Classnames clashes across multiple modules
-Prefixes help sort this out
-Css-in-JS helps too but CSS-in-JS libraries need extra setup to prevent generic classnames clash
-Check library docs when required!
-Navigation within MFApps
-Container and subapps need routing features
-Subapps might need new routes. This shouldn’t require a container deployment
-Should be able to display multiple subapps at the same time
-Better to use existing routing solutions. No need to reinvent the wheel.
-Navigation should work both inside the container and in isolation
-⚠️ Issues with routing handled through error management in CloudFront
-Authentication
-Not for enforcing permissions
-Only to signin or signup
-Either each subapp is aware of auth (leads to code duplication)
-OR auth is centralized in container app
-Summary
-Important to understand the requirements. They drive the architecture
-Always ask if changing something in the future will require a change on another app
-Everyone will eventually forget React/Vue/[Library X]
-Scope CSS
-MFE might cause issues in production not reproducible in development
-Notes
-Framework VS Library: Libraries are called by the code but frameworks call our code. This is an Inversion of Control (IoC) as the framework maintains control of the application.
-Load balancer: Invisible facilitator between the user and a group of servers, ensuring the server resources are distributed equally across the requests. Related to horizontal scalability.
-❗Promise (JS): Object that will produce a single value sometime in the future. If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed. 
-Pending: This is the default state of a defined promise
-Fulfilled:  This is the state of a successful promise
-Rejected: This is the state of a failed promise
-Elasticsearch: Search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents. Elasticsearch is developed in Java and its official clients are available in Java, .NET (C#), PHP, Python, Ruby and many other languages. According to the DB-Engines ranking, Elasticsearch is the most popular enterprise search engine. Wiki
-Security: Security refers to the practice of protecting software systems and data from unauthorized access, use, disclosure, disruption, modification, or destruction. It involves implementing various measures such as authentication, authorization, encryption, and secure coding practices to mitigate potential security threats and vulnerabilities.
-Reliability: It refers to the ability of a software system to perform consistently and in a predictable manner even in the presence of failures or unexpected events. It encompasses aspects such as fault tolerance, error handling, and infrastructure robustness and is achieved through thorough testing, monitoring, and implementation of redundancy or failover mechanisms to minimize downtime and ensure continuous operation.
-Scalability: The capability of a software system to handle increasing workload or user demand by efficiently expanding its resources or infrastructure without compromising performance or responsiveness. It is essential for accommodating growing user bases, increasing data volumes, or handling spikes in traffic without experiencing degradation in system performance.
-Platform Management: Platform management involves overseeing the infrastructure, environment, and tools used to support software development, deployment, and operation. This includes managing hardware resources, operating systems, middleware, development frameworks, and other software components required to host and run applications effectively. Platform management also encompasses tasks such as provisioning, configuration, monitoring, and optimization of the development and production environments to ensure their reliability, security, and performance.
-Development Evangelism: Development evangelism is the practice of promoting and advocating for software development platforms, technologies, frameworks, or best practices within the developer community. It involves engaging with developers through various channels such as conferences, workshops, forums, social media, and developer communities to educate, inspire, and encourage the adoption of specific technologies or methodologies. Development evangelists often collaborate with product teams, contribute to documentation and tutorials, and provide support and guidance to developers to help them succeed with the adopted technologies.
-Developer Advocate Experience: Developer advocate experience focuses on enhancing the experience and satisfaction of developers who use a particular platform, tool, or technology. It involves understanding the needs, challenges, and preferences of developers and advocating for improvements, enhancements, or features that can enhance their productivity, usability, and overall satisfaction. Developer advocate experience encompasses aspects such as documentation quality, API design, developer tooling, community support, and responsiveness to feedback, aiming to create a positive and empowering experience for developers using the platform.
-CDN: A Content Delivery Network is a geographically distributed group of servers that caches content close to end users. A CDN allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos. The popularity of CDN services continues to grow, and today the majority of web traffic is served through CDNs, including traffic from major sites like Facebook, Netflix, and Amazon. A properly configured CDN may also help protect websites against some common malicious attacks, such as Distributed Denial of Service (DDOS) attacks. While a CDN does not host content and can’t replace the need for proper web hosting, it does help cache content at the network edge, which improves website performance. Many websites struggle to have their performance needs met by traditional hosting services, which is why they opt for CDNs.
+### What is security in the context of SE
+Security refers to the practice of protecting software systems and data from unauthorized access, use, disclosure, disruption, modification, or destruction. It involves implementing various measures such as authentication, authorization, encryption, and secure coding practices to mitigate potential security threats and vulnerabilities.
 
+### What is reliability in the context of SE
+It refers to the ability of a software system to perform consistently and in a predictable manner even in the presence of failures or unexpected events. It encompasses aspects such as fault tolerance, error handling, and infrastructure robustness and is achieved through thorough testing, monitoring, and implementation of redundancy or failover mechanisms to minimize downtime and ensure continuous operation.
+
+### What is scalability
+The capability of a software system to handle increasing workload or user demand by efficiently expanding its resources or infrastructure without compromising performance or responsiveness. It is essential for accommodating growing user bases, increasing data volumes, or handling spikes in traffic without experiencing degradation in system performance.
+
+### What is platform management
+Platform management involves overseeing the infrastructure, environment, and tools used to support software development, deployment, and operation. This includes managing hardware resources, operating systems, middleware, development frameworks, and other software components required to host and run applications effectively. Platform management also encompasses tasks such as provisioning, configuration, monitoring, and optimization of the development and production environments to ensure their reliability, security, and performance.
+
+### Development Evangelism
+Development evangelism is the practice of promoting and advocating for software development platforms, technologies, frameworks, or best practices within the developer community. It involves engaging with developers through various channels such as conferences, workshops, forums, social media, and developer communities to educate, inspire, and encourage the adoption of specific technologies or methodologies. Development evangelists often collaborate with product teams, contribute to documentation and tutorials, and provide support and guidance to developers to help them succeed with the adopted technologies.
+
+### Developer Advocate Experience
+Developer advocate experience focuses on enhancing the experience and satisfaction of developers who use a particular platform, tool, or technology. It involves understanding the needs, challenges, and preferences of developers and advocating for improvements, enhancements, or features that can enhance their productivity, usability, and overall satisfaction. Developer advocate experience encompasses aspects such as documentation quality, API design, developer tooling, community support, and responsiveness to feedback, aiming to create a positive and empowering experience for developers using the platform.
+
+### CDN
+A Content Delivery Network is a geographically distributed group of servers that caches content close to end users. A CDN allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos. The popularity of CDN services continues to grow, and today the majority of web traffic is served through CDNs, including traffic from major sites like Facebook, Netflix, and Amazon. A properly configured CDN may also help protect websites against some common malicious attacks, such as Distributed Denial of Service (DDOS) attacks. While a CDN does not host content and can’t replace the need for proper web hosting, it does help cache content at the network edge, which improves website performance. Many websites struggle to have their performance needs met by traditional hosting services, which is why they opt for CDNs.
