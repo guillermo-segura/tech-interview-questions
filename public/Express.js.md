@@ -73,3 +73,5 @@ File uploads can be handled in Express.js using middleware such as `multer`. `mu
 ## How do you handle CORS (Cross-Origin Resource Sharing) in Express.js applications?
 
 CORS in Express.js can be handled using the `cors` middleware or by implementing custom middleware to set the necessary CORS headers (e.g., `Access-Control-Allow-Origin`, `Access-Control-Allow-Methods`, `Access-Control-Allow-Headers`) in the response to allow cross-origin requests from specific origins or methods.
+
+[Go back](https://github.com/guillermo-segura/tech-interview-questions)

@@ -136,3 +136,5 @@ It is asynchronous because state updates are queued into the JS event loop to al
 ## How can I render an HTML string?
 
 You can render an HTML string by setting the `innerHTML` attribute of an element to the string. To get the element, you either query it using JavaScript or set the prop `dangerouslySetInnerHTML={{ __html: <html_string> }}`
+
+[Go back](https://github.com/guillermo-segura/tech-interview-questions)

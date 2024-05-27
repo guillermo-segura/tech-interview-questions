@@ -63,3 +63,5 @@ Kanban is a project management framework that relies on visual tasks to manage w
 With Scrum, your team promises to ship some valuable increment of work by the end of each sprint. Scrum is built on empiricism, focusing on small increments of work that will help you learn from your customers and better inform what you do next.
 
 Kanban is great for teams that have lots of incoming requests that vary in priority and size. Whereas scrum processes require high control over what is in scope, kanban let’s you go with the flow.
+
+[Go back](https://github.com/guillermo-segura/tech-interview-questions)

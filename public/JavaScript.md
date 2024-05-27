@@ -15,3 +15,5 @@ JavaScript only hoists declarations, not initializations. Hoisting is (to many d
 ## Explain what is the JavaScript event loop and how does it work
 
 To be added soon.
+
+[Go back](https://github.com/guillermo-segura/tech-interview-questions)

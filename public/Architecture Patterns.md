@@ -173,3 +173,5 @@ Asynchronous is a non-blocking architecture that enables the execution of tasks 
 Asynchronous programming enhances the user experience by decreasing the lag time between when a function is called and when the value of that function is returned. Async programming translates to a faster, more seamless flow in the real world. For example, users want their apps to run fast, but fetching data from an API takes time. In these cases, asynchronous programming helps the app screen load more quickly, improving the user experience.
 
 ![Asynchronous pattern](https://github.com/guillermo-segura/tech-interview-questions/blob/main/assets/asynchronous.png 'Asynchronous pattern')
+
+[Go back](https://github.com/guillermo-segura/tech-interview-questions)

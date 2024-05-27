@@ -55,3 +55,5 @@ A white-label product is a brandless product that will be sold to a company, whi
 ## What is digital identity?
 
 Digital identity is a 1-1 relationship between an entity, usually a human, and its digital presence. In the context of Web3, it would be a Decentralized Identifier (DID).
+
+[Go back](https://github.com/guillermo-segura/tech-interview-questions)
