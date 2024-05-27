@@ -39,7 +39,7 @@ Scrum: Much like a rugby team (where it gets its name) training for the big game
 
 Kanban: Work items are represented visually on a kanban board, allowing team members to see the state of every piece of work at any time. A kanban board is an agile project management tool designed to help visualize work, limit work-in-progress, and maximize efficiency (or flow).
 
-Kanban VS Scrum
+### Kanban VS Scrum
 Kanban is a project management framework that relies on visual tasks to manage workflows, limit work-in-progress and move quickly things from “In progress” to “Done”, while Scrum is a project management framework that helps teams structure and manage their work through a set of values, principles, and practices.
 
 With Scrum, your team promises to ship some valuable increment of work by the end of each sprint. Scrum is built on empiricism, focusing on small increments of work that will help you learn from your customers and better inform what you do next. 
