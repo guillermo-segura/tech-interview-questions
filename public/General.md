@@ -1,5 +1,45 @@
 # General Questions
 
+## Explain which best practices do you usually follow
+
+On frontend:
+
+- Making sure hooks and components are reusable
+
+- Functional components over class components
+
+- Prevent unnecessary renders through memoisation
+
+- Interface segregation principle (smaller interfaces to make a big one)
+
+- Immutability over mutability
+
+- No `any` type
+
+On backend:
+
+- Fat models, skinny controllers
+
+- Business logic in service class
+
+- Don’t get data from `.env` directly
+
+- All dates in standard format
+
+Other general best practices to follow:
+
+- DRY - don’t repeat yourself
+
+- Single responsibility principle
+
+- Clear folder structure
+
+- Structured import order
+
+- Methods should do just one thing
+
+- Descriptive names over comments
+
 ## Differences between framework VS library
 
 Libraries are called by the code but frameworks call our code. This is an Inversion of Control (IoC) as the framework maintains control of the application.

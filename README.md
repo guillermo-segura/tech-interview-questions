@@ -6,7 +6,9 @@ Tech interview questions I've faced throughout my career.
 
 ## General
 
-- [General Questions](https://github.com/guillermo-segura/tech-interview-questions/blob/main/public/General%20Questions.md)
+- [General Questions](https://github.com/guillermo-segura/tech-interview-questions/blob/main/public/General.md)
+
+- [Behavioral Questions](https://github.com/guillermo-segura/tech-interview-questions/blob/main/public/Behavioral.md)
 
 - [Agile](https://github.com/guillermo-segura/tech-interview-questions/blob/main/public/Agile.md)
 
