@@ -2,7 +2,6 @@
 Tech interview questions I've faced throughout my career
 
 ## Agile
----
 
 ### What is Agile methodology?
 
